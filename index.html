@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренажёр ОГЭ по географии — Hello, PyScript!</title>
+
+    <!-- Стили PyScript 2024.11.1 -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.11.1/core.css" />
+    <!-- Движок PyScript 2024.11.1 (запускает Python прямо в браузере) -->
+    <script type="module" src="https://pyscript.net/releases/2024.11.1/core.js"></script>
+
+    <!-- Наши собственные стили оформления -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <main class="card">
+        <h1>Тренажёр ОГЭ по географии</h1>
+        <p class="subtitle">Урок 1: проверяем, что Python работает прямо в браузере</p>
+
+        <div id="status-box" class="status-box">
+            Загружается Python (PyScript)... Подождите пару секунд.
+        </div>
+
+        <button id="hello-btn" class="btn">Проверить Python</button>
+    </main>
+
+    <!-- Подключаем наш Python-файл -->
+    <script type="py" src="./main.py"></script>
+</body>
+</html>
