@@ -10,7 +10,7 @@ hello_button = document.querySelector("#hello-btn")
 
 # Сразу меняем текст при успешной загрузке Python
 python_version = sys.version.split()[0]
-status_box.innerText = f"Привет, Надя и Николай! Python {python_version} успешно запущен в браузере."
+status_box.innerText = f"Привет! Python {python_version} успешно запущен в браузере."
 
 click_count = 0
 
