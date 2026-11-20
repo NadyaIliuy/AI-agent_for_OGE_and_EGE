@@ -14,18 +14,44 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <main class="card">
-        <h1>Тренажёр ОГЭ</h1>
-        <p class="subtitle">Урок 1: проверяем, что Python работает прямо в браузере</p>
+    
+<!-- СЛАЙД I: Стартовый экран -->
+    <section id="slide-1" class="screen card">
+        <h1>Тренажёр для ОГЭ и ЕГЭ</h1>
+        <p>Добро пожаловать!</p>
+        <button id="btn-start">Начать</button>
+    </section>
 
-        <div id="status-box" class="status-box">
-            Загружается Python (PyScript)... Подождите пару секунд.
-        </div>
-
-        <button id="hello-btn" class="btn">Проверить Python</button>
-    </main>
-
-    <!-- Подключаем наш Python-файл -->
+    <!-- СЛАЙД II/1: Выбор экзамена (пока спрятан классом hidden!) -->
+    <section id="slide-2-1" class="screen card hidden">
+       <h2>Выбор экзамена:</h2>
+        <button id="btn-new-oge">Новый вариант ОГЭ</button>
+        <button id="btn-new-ege">Новый вариант ЕГЭ</button>
+        <button id="btn-solved-oge">Прорешенные варианты ОГЭ</button>
+        <button id="btn-solved-ege">Прорешенные варианты ЕГЭ</button>
+        <button id="btn-back-to-1">← Назад</button>
+    </section>   
     <script type="py" src="./main.py"></script>
+
+    <!-- СЛАЙД III: Выбор дисциплины (11 предметов по макету) -->
+    <section id="slide-3" class="screen card hidden">
+    <h2 id="subjects-title">Выбор дисциплины</h2>
+    <div class="grid-subjects">
+    <button class="btn-subject" data-subject="biology">Биология</button>
+    <button class="btn-subject" data-subject="geography">География</button>
+    <button class="btn-subject" data-subject="foreign">Ин. яз</button>
+    <button class="btn-subject" data-subject="informatics">Информатика</button>
+    <button class="btn-subject" data-subject="history">История</button>
+    <button class="btn-subject" data-subject="literature">Литература</button>
+    <button class="btn-subject" data-subject="math">Математика</button>
+    <button class="btn-subject" data-subject="social">Обществознание</button>
+    <button class="btn-subject" data-subject="russian">Русский язык</button>
+    <button class="btn-subject" data-subject="physics">Физика</button>
+    <button class="btn-subject" data-subject="chemistry">Химия</button>
+    </div>
+    <p id="subject-notice" class="hidden"></p>
+    <button id="btn-back-to-2">← Назад</button>
+    </section>
+
 </body>
 </html>
